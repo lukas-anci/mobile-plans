@@ -122,3 +122,14 @@ ul {
   background-color: rgba(34, 34, 34, 0.04);
   flex-basis: 50%;
 }
+
+.radio-container {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  height: 100%;
+  margin-left: 1rem;
+}
+.radio-container svg {
+  margin-right: 0.4rem;
+}

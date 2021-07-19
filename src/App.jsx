@@ -14,13 +14,29 @@ class App extends Component {
     };
   }
 
+  handleRadio = (val) => {
+    console.log('radio was pressed');
+    console.log(val);
+    // jei gaunu commit nustattau busena i atitinkama
+
+    // arba priesingai
+    if (val === 'commit') {
+      this.setState({ noCommitment: false });
+    } else {
+      this.setState({ noCommitment: true });
+    }
+  };
+
   render() {
     return (
       <div className="App ">
         <div className="container">
           <h1>mobile app</h1>
           <div className="controls d-flex">
-            <Commitment noCommitment={this.state.noCommitment} />
+            <Commitment
+              handleRadio={this.handleRadio}
+              noCommitment={this.state.noCommitment}
+            />
             <HaveServices />
           </div>
           <main className="plan-cards">
