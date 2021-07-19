@@ -14,6 +14,10 @@
   max-width: 800px;
   margin: 0 auto;
 }
+.d-flex {
+  display: flex;
+  gap: 0.5rem;
+}
 /* button {
   background-color: #990ae3;
   border-radius: 17px 17px 17px 17px;
@@ -106,4 +110,15 @@ ul {
   border-radius: 20px;
   font-weight: bold;
   cursor: pointer;
+}
+/* Commitment component */
+.commitment-component {
+  display: flex;
+  width: 50%;
+  gap: 2px;
+}
+
+.c__selection {
+  background-color: rgba(34, 34, 34, 0.04);
+  flex-basis: 50%;
 }

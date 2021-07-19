@@ -1,16 +1,30 @@
 import React, { Component } from 'react';
+import CustomRadio from './common/customRadio';
 class Commitment extends Component {
-  state = {};
+  handleRadio = () => {
+    console.log('radio was pressed');
+  };
+
   render() {
     return (
       <div className="commitment-component">
         <div className="c__selection">
-          <span className="c__select">000</span>
-          <span className="c__select-title">24 men</span>
+          <span className="c__select">
+            <CustomRadio
+              checked={!this.props.noCommitment}
+              onClick={this.handleRadio}
+            >
+              24 men
+            </CustomRadio>
+          </span>
         </div>
         <div className="c__selection">
-          <span className="c__select">000</span>
-          <span className="c__select-title">Be isipareigojimu</span>
+          <CustomRadio
+            checked={this.props.noCommitment}
+            onClick={this.handleRadio}
+          >
+            Be isipareigojimu
+          </CustomRadio>
         </div>
       </div>
     );

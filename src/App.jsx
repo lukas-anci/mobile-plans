@@ -9,7 +9,9 @@ import MobilePlanOff from './components/mobilePlanOff';
 class App extends Component {
   constructor(props) {
     super(props);
-    this.state = {};
+    this.state = {
+      noCommitment: false,
+    };
   }
 
   render() {
@@ -17,8 +19,8 @@ class App extends Component {
       <div className="App ">
         <div className="container">
           <h1>mobile app</h1>
-          <div className="controls">
-            <Commitment />
+          <div className="controls d-flex">
+            <Commitment noCommitment={this.state.noCommitment} />
             <HaveServices />
           </div>
           <main className="plan-cards">
