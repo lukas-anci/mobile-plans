@@ -5,10 +5,10 @@ class MobilePlanOff extends Component {
   render() {
     return (
       <div className="mobile-plan">
-        <h6 className="plan__header">Mobilus START 1</h6>
-        <h2 className="plan__dataAllow">1 GB</h2>
+        <h6 className="plan__header">{this.props.headerTitle}</h6>
+        <h2 className="plan__dataAllow">{this.props.dataAlowed}</h2>
         <small className="plan__dataEu">Iš jų 1 GB ES/EEE</small>
-        <p className="plan__min-sms">Neribotos MIN ir SMS</p>
+        <p className="plan__min-sms">{this.props.minSms}</p>
         <div className="plan__features">
           <div className="hr"></div>
           <ul className="features__list">
