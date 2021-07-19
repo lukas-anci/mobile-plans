@@ -1,3 +1,30 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
 * {
   box-sizing: border-box;
+}
+.App {
+  font-family: 'Roboto', sans-serif;
+}
+button {
+  background-color: #990ae3;
+  border-radius: 17px 17px 17px 17px;
+  color: white;
+  padding: 1em;
+}
+.card-bottom {
+  display: flex;
+}
+.card {
+  border: 1px solid #000;
+  width: 30%;
+  background-color: snow;
+  border-radius: 10px;
+  padding: 1em;
+}
+ul {
+  list-style: none;
+  padding: 0;
+}
+.fa-check {
+  color: green;
 }

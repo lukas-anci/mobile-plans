@@ -10,13 +10,21 @@ class MobilePlan extends Component {
         <h6>Neribotos sms </h6>
 
         <ul>
-          <li>M. parašas (6 mėn.)</li>
-          <li>Įrangos draudimas (3 mėn.)</li>
+          <li>
+            {' '}
+            <i class="fa fa-check"></i> M. parašas (6 mėn.)
+          </li>
+          <li>
+            {' '}
+            <i class="fa fa-check"></i> Įrangos draudimas (3 mėn.)
+          </li>
         </ul>
         <div className="card-bottom">
-          <div className="price">9,00 €/mėn. 24 mėn. sutartis</div>
+          <div className="price">
+            9,00 €/mėn. <br /> 24 mėn. sutartis
+          </div>
           <div className="button">
-            <button>Gauti pasiulyma</button>
+            <button>Domina</button>
           </div>
         </div>
       </div>
