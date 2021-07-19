@@ -46,6 +46,7 @@ ul {
   max-width: 280px;
   padding: 1rem;
   border-radius: 15px;
+  overflow: hidden;
 }
 .plan__header {
   font-weight: normal;
@@ -60,6 +61,23 @@ ul {
 }
 .plan__min-sms {
   font-size: 1rem;
+}
+.plan__features .hr {
+  height: 1px;
+  background-color: #f2f2f2;
+  margin: 0.5rem -100%;
+}
+.features__list {
+  list-style: none;
+  padding-left: 0;
+}
+.features__list li {
+  line-height: 1.5rem;
+}
+.features__check {
+  width: 1rem;
+  margin-right: 0.6rem;
+  vertical-align: middle;
 }
 .plan__bottom {
   display: flex;
@@ -87,4 +105,5 @@ ul {
   padding: 0.6rem 1.4rem;
   border-radius: 20px;
   font-weight: bold;
+  cursor: pointer;
 }
