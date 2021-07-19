@@ -1,11 +1,20 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+/* reset */
 * {
   box-sizing: border-box;
 }
+/* commponents */
 .App {
   font-family: 'Roboto', sans-serif;
+  background-color: #f2f2f2;
+  color: #222;
 }
-button {
+/* common */
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+}
+/* button {
   background-color: #990ae3;
   border-radius: 17px 17px 17px 17px;
   color: white;
@@ -26,5 +35,56 @@ ul {
   padding: 0;
 }
 .fa-check {
-  color: green;
+  color: green; */
+/* } */
+
+/* CARD */
+/* mobile-plane */
+.mobile-plan {
+  background-color: #fff;
+  /* temporary */
+  max-width: 280px;
+  padding: 1rem;
+  border-radius: 15px;
+}
+.plan__header {
+  font-weight: normal;
+  margin-top: 0;
+  color: rgba(51, 51, 51, 0.7);
+}
+.plan__dataAllow {
+  margin-bottom: 0;
+}
+.plan__dataEu {
+  font-size: 0.7rem;
+}
+.plan__min-sms {
+  font-size: 1rem;
+}
+.plan__bottom {
+  display: flex;
+  align-items: center;
+}
+.bottom__price-part {
+  width: 50%;
+}
+.botton__price {
+  margin-bottom: 0;
+}
+.botton__price span {
+  font-weight: normal;
+  font-size: 0.8rem;
+}
+.bottom__term {
+  font-size: 0.8rem;
+  color: rgba(51, 51, 51, 0.7);
+}
+.plan__cta {
+  width: 50%;
+  background-color: #990ae3;
+  color: white;
+  border: none;
+  padding: 0.6rem 1.4rem;
+  border-radius: 20px;
+  font-weight: bold;
 }

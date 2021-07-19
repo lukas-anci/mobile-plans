@@ -14,16 +14,18 @@ class App extends Component {
 
   render() {
     return (
-      <div className="App">
-        <h1>mobile app</h1>
-        <div className="controls">
-          <Commitment />
-          <HaveServices />
+      <div className="App ">
+        <div className="container">
+          <h1>mobile app</h1>
+          <div className="controls">
+            <Commitment />
+            <HaveServices />
+          </div>
+          <main className="plan-cards">
+            {/* <MobilePlan /> */}
+            <MobilePlanOff />
+          </main>
         </div>
-        <main className="plan-cards">
-          <MobilePlan />
-          <MobilePlanOff />
-        </main>
       </div>
     );
   }
