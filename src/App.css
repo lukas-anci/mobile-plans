@@ -14,7 +14,7 @@
 }
 /* common */
 .container {
-  max-width: 800px;
+  max-width: 900px;
   margin: 0 auto;
 }
 .d-flex {
@@ -47,13 +47,20 @@ ul {
 
 /* CARD */
 /* mobile-plane */
+.plan-cards {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
 .mobile-plan {
   background-color: #fff;
   /* temporary */
-  max-width: 280px;
+  width: 280px;
   padding: 1rem;
   border-radius: 15px;
   overflow: hidden;
+  position: relative;
+  padding-bottom: 80px;
 }
 .plan__header {
   font-weight: normal;
@@ -89,6 +96,8 @@ ul {
 .plan__bottom {
   display: flex;
   align-items: center;
+  position: absolute;
+  bottom: 1rem;
 }
 .bottom__price-part {
   width: 50%;

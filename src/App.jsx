@@ -13,6 +13,7 @@ class App extends Component {
     this.state = {
       noCommitment: false,
       mobile1: {},
+      allPlans: [],
     };
   }
 
@@ -25,10 +26,12 @@ class App extends Component {
       const res = await fetch('/data/plan1.json');
 
       const data = await res.json();
+      const { data: newPlans } = await axios.get('/data/allplans.json');
+      console.log('newPlans', newPlans);
 
       console.log(data);
       console.log(resultAxios);
-      this.setState({ mobile1: resultAxios });
+      this.setState({ mobile1: resultAxios, allPlans: newPlans });
     } catch (err) {
       console.log(err);
     }
@@ -61,7 +64,13 @@ class App extends Component {
           </div>
           <main className="plan-cards">
             {/* <MobilePlan /> */}
-            <MobilePlanOff mobile={this.state.mobile1} />
+            {this.state.allPlans.map((plan) => (
+              <MobilePlanOff
+                key={plan.headerTitle}
+                commit={this.state.noCommitment}
+                mobile={plan}
+              />
+            ))}
           </main>
         </div>
       </div>
