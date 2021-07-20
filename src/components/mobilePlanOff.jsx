@@ -3,7 +3,6 @@ import ListImage from '../static/checked.png';
 class MobilePlanOff extends Component {
   state = {};
   formatPrice(num) {
-    console.log(`skaicius ${num}`);
     return num?.toFixed(2);
   }
   render() {

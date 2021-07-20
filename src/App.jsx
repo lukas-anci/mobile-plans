@@ -3,7 +3,7 @@ import React, { Component } from 'react';
 import './App.css';
 import Commitment from './components/commitment';
 import HaveServices from './components/haveServices';
-import MobilePlan from './components/mobilePlan';
+// import MobilePlan from './components/mobilePlan';
 import MobilePlanOff from './components/mobilePlanOff';
 import axios from 'axios';
 
@@ -23,14 +23,14 @@ class App extends Component {
 
     try {
       const { data: resultAxios } = await axios.get('/data/plan1.json');
-      const res = await fetch('/data/plan1.json');
+      // const res = await fetch('/data/plan1.json');
 
-      const data = await res.json();
+      // const data = await res.json();
       const { data: newPlans } = await axios.get('/data/allplans.json');
-      console.log('newPlans', newPlans);
+      // console.log('newPlans', newPlans);
 
-      console.log(data);
-      console.log(resultAxios);
+      // console.log(data);
+      // console.log(resultAxios);
       this.setState({ mobile1: resultAxios, allPlans: newPlans });
     } catch (err) {
       console.log(err);
