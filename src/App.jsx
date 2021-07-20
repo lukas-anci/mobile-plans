@@ -14,6 +14,7 @@ class App extends Component {
       noCommitment: false,
       mobile1: {},
       allPlans: [],
+      haveService: false,
     };
   }
 
@@ -49,6 +50,10 @@ class App extends Component {
       this.setState({ noCommitment: true });
     }
   };
+  handleService = () => {
+    console.log('paspaudei');
+    this.setState({ haveService: !this.state.haveService });
+  };
 
   render() {
     return (
@@ -60,7 +65,7 @@ class App extends Component {
               handleRadio={this.handleRadio}
               noCommitment={this.state.noCommitment}
             />
-            <HaveServices />
+            <HaveServices haveService={this.handleService} />
           </div>
           <main className="plan-cards">
             {/* <MobilePlan /> */}
@@ -69,6 +74,7 @@ class App extends Component {
                 key={plan.headerTitle}
                 commit={this.state.noCommitment}
                 mobile={plan}
+                haveServiceState={this.state.haveService}
               />
             ))}
           </main>

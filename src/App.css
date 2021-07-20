@@ -124,6 +124,16 @@ ul {
   font-weight: bold;
   cursor: pointer;
 }
+.plan__dataServices {
+  color: red;
+  margin-left: 1rem;
+}
+.plan__discount {
+  display: flex;
+}
+.plan__dataAllows {
+  text-decoration: line-through;
+}
 /* Commitment component */
 .commitment-component {
   display: flex;

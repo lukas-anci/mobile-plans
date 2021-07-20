@@ -4,6 +4,7 @@
       "dataAlowed": 1,
       "dataServices": 2,
       "dataEU": 1,
+      "dataToggle": 2,
       "minSms": "Neribotos MIN ir SMS",
       "features": [
         {
@@ -29,6 +30,7 @@
       "dataAlowed": 4,
       "dataServices": 8,
       "dataEU": 4,
+      "dataToggle": 8,
       "minSms": "Neribotos MIN ir SMS",
       "features": [
         {

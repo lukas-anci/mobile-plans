@@ -10,7 +10,15 @@ class MobilePlanOff extends Component {
     return (
       <div className="mobile-plan">
         <h6 className="plan__header">{p.headerTitle}</h6>
-        <h2 className="plan__dataAllow">{p.dataAlowed} GB</h2>
+        {!this.props.haveServiceState ? (
+          <h2 className="plan__dataAllow">{p.dataAlowed} GB</h2>
+        ) : (
+          <div className="plan__discount">
+            <h2 className="plan__dataAllows">{p.dataAlowed} GB</h2>
+            <h2 className="plan__dataServices">{p.dataServices} GB</h2>
+          </div>
+        )}
+
         <small className="plan__dataEU">Iš jų {p.dataEU} GB ES/EEE</small>
         <p className="plan__min-sms">{p.minSms}</p>
         <div className="plan__features">
